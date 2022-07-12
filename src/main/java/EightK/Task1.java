@@ -8,16 +8,29 @@ public class Task1 {
 
     public static void main(String[] args) {
 
-        double [] array = {-2.398};
-        double sum = 0;
+        double []  numbers = {-2.398};
+        System.out.println(sumArray(numbers));
 
-        for (int i=0; i<array.length;i++){
-            sum += array[i];
+
+        /*for (int i=0; i<numbers.length;i++){
+            sum += numbers[i];
         }
-        if (array.length <=0){
+        if (numbers.length <=0){
             System.out.println(0);
-        }else System.out.println(sum);
+        }else System.out.println(sum);*/
 
     }
+    public static double sumArray(double[] numbers){
 
+
+        double sum = 0;
+        for (int i=0; i<numbers.length;i++){
+            sum += numbers[i];
+        }
+        if (numbers.length <=0){
+            return 0;
+        }else System.out.println(sum);
+        return 0;
+
+    }
 }
